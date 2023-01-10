@@ -2,7 +2,7 @@
   "name": "@types/prop-x",
   "version": "1.0.0",
   "description": "TypeScript definitions for prop-x",
-  "main": "index.js",
+  "main": "index.d.ts",
   "scripts": {
     "build": "rimraf ./lib && tsc",
     "semantic-release": "semantic-release --branches main",
