@@ -30,7 +30,6 @@ jobs:
     - run: npm ci
     
   publish:
-
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: [build]
@@ -39,6 +38,9 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        node-versions: ${{ matrix.node-version }}
+        node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run semantic-release
+    
+  env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
