@@ -1,0 +1,47 @@
+{
+  "name": "@types/prop-x",
+  "version": "1.0.0",
+  "description": "TypeScript definitions for prop-x",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "semantic-release": "semantic-release --branches main",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carpenjk/prop-x-types.git"
+  },
+  "keywords": [
+    "prop-x"
+  ],
+  "author": "Jeremy Carpenter",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/carpenjk/prop-x-types/issues"
+  },
+  "homepage": "https://github.com/carpenjk/prop-x-types#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.26",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.3",
+    "typescript": "^4.9.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
