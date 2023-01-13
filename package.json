@@ -5,7 +5,7 @@
   "main": "src/index.d.ts",
   "scripts": {
     "build": "rimraf ./lib && tsc",
-    "semantic-release": "semantic-release --branches main",
+    "semantic-release": "semantic-release --branch",
     "commit": "git-cz"
   },
   "repository": {
