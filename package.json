@@ -1,16 +1,16 @@
 {
   "name": "@carpenjk/prop-x-types",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "TypeScript definitions for prop-x",
   "main": "src/index.d.ts",
   "scripts": {
     "build": "rimraf ./lib && tsc",
-    "semantic-release": "semantic-release --branches main",
+    "semantic-release": "semantic-release",
     "commit": "git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carpenjk/prop-x-types.git"
+    "url": "https://github.com/carpenjk/prop-x-types.git"
   },
   "keywords": [
     "prop-x"
@@ -33,7 +33,7 @@
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0",
     "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.3",
+    "semantic-release": "^20.0.2",
     "typescript": "^4.9.4"
   },
   "publishConfig": {
