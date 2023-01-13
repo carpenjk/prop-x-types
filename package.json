@@ -1,8 +1,8 @@
 {
-  "name": "@types/prop-x",
+  "name": "@carpenjk/prop-x-types",
   "version": "1.0.0",
   "description": "TypeScript definitions for prop-x",
-  "main": "index.d.ts",
+  "main": "src/index.d.ts",
   "scripts": {
     "build": "rimraf ./lib && tsc",
     "semantic-release": "semantic-release --branches main",
