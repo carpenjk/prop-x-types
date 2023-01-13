@@ -34,13 +34,13 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: [build]
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
