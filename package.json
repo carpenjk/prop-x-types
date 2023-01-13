@@ -5,12 +5,17 @@
   "main": "src/index.d.ts",
   "scripts": {
     "build": "rimraf ./lib && tsc",
-    "semantic-release": "semantic-release --branches main",
+    "semantic-release": "semantic-release",
     "commit": "git-cz"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/carpenjk/prop-x-types.git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   },
   "keywords": [
     "prop-x"
