@@ -6,7 +6,8 @@ on:
 permissions:
   # All other permissions are set to none
   checks: write
-  contents: read
+  contents: write
+  issues: write
   pull-requests: write
 jobs:
   release:
